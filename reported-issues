@@ -1,0 +1,94 @@
+
+BUGs:
+
+--------------------------------------------------------------------------------
+B1. Check number of computers is increased when create new computer
+
+1. Check number of computers found (currently “574 computers found”)
+2. Fill all fields with all valid data
+3. Click on “Create this computer” button
+4. Check number of computers is increased by one
+
+Actual: number of computer is the same
+Expected: number of computers is increased by one
+
+--------------------------------------------------------------------------------
+B2: Check add new computer
+
+1. Click on a “Add a new computer” button -> new computer page is opened
+2. Fill all fields with all valida data
+3. Click on “Create this computer”
+4. Check user is redirected on home page
+5. Check Done message is displayed
+6. Search for newly created computer name is search field
+7. Check newly created computer is displayed
+
+Actual: no results are shown
+Expected: newly created computer is displayed
+
+
+--------------------------------------------------------------------------------
+B3: Check delete computer
+
+1. click on a first computer name link in the table ->  computer detail page is opened
+2. Click on Delete this computer button -> user is redirected on home page
+3. Search for deleted computer
+4. Check computer is not displayed
+
+Actual: computer is displayed
+Expected: Computer Is not displayed
+
+--------------------------------------------------------------------------------
+B4. Check number of computers is decreased when delete existing computer
+
+1. Check number of computers found (currently “574 computers found”)
+2. Click on first computer in the table
+3. Click on “Delete this computer” button
+4. Check number of computers is decreased by one
+
+Actual: number of computer is the same
+Expected: number of computers is decreased by one
+
+--------------------------------------------------------------------------------
+B5. Check sorting is performed on click on sort arrow
+
+1. Open home page
+2. Navigate mouse to link fields („Computer name“ „Introduced“, „Discontinued“, „Company“) and click on sort arrow
+
+Actual: Nothing happens
+Expected: Columns are properly sorted
+
+--------------------------------------------------------------------------------
+B6: Check update all data
+
+1. click on a first computer name link in the table ->  computer detail page is opened
+2.Update all data with all valid inputs
+3. Click on “Save this computer”
+4. Check data are updated
+
+Actual: no data are updated
+Expected: all data are updated
+
+--------------------------------------------------------------------------------
+B7: Check update computer with discontinued date in the past
+
+1. click on a first computer name link in the table ->  computer detail page is opened
+2. Update “Discontinued” date with date in the past
+3. Click on “Save this computer”
+
+Actual: Computer XXX has been updated
+Expected: Error message is displayed
+
+--------------------------------------------------------------------------------
+B8: Check create new computer with discontinued date in the past and empty introduced date
+
+1. Enter valid computer name
+2. Leave empty“Introduced” date
+3. In input field “Discontinued” enter date in the past (for example: 2000-01-01)
+4. From input “Company” select “Nokia”
+5. Click on “Create this computer” button
+
+Actual: new computer is created
+Expected: new computer is not created
+
+--------------------------------------------------------------------------------

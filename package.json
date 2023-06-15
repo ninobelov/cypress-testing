@@ -1,0 +1,30 @@
+{
+  "name": "cypress-automated-tests",
+  "version": "1.0.0",
+  "description": "- [Cypress](https://www.cypress.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser": "cypress run --spec 'cypress/e2e/ui/1-all-tests/all_tests.cy.js' --browser chrome --headless",
+    "error-validation": "cypress run --spec 'cypress/e2e/ui/error_validation.cy.js' --browser chrome --headless",
+    "cypress-dashboard-run": "npx cypress run --spec 'cypress/e2e/ui/1-all-tests/all_tests.cy.js' --record --key=c2745ccf-96fe-4909-bbe8-766724f6ba2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aca24/cypress-automated-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aca24/cypress-automated-tests/issues"
+  },
+  "homepage": "https://github.com/aca24/cypress-automated-tests#readme",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-xpath": "^1.8.0",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
+  }
+}
